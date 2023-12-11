@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const cors = require('cors')
-const port = process.env.port ;
+const port = process.env.port || 5000 ;
 const connectToDatabase = require('./database/connection')
 connectToDatabase()
 const REACT_APP_BASE_URL=process.env.REACT_APP_BASE_URL ;

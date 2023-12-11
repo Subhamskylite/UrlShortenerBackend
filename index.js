@@ -4,7 +4,7 @@ const cors = require('cors')
 const port = process.env.port || 5000 ;
 const connectToDatabase = require('./database/connection')
 connectToDatabase()
-const REACT_APP_BASE_URL="http://localhost:3000" ;
+const REACT_APP_BASE_URL="https://urlshortenerbackend-5vk5.onrender.com" ;
 
 app.use(cors())
 app.use(express.json())
